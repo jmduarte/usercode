@@ -28,6 +28,8 @@ QCD = [
 #]
 
 signals=[
+    '/QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+    '/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
 #    '/QCD_Pt_50to80_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
 #    '/QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
 #    '/QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
@@ -36,18 +38,18 @@ signals=[
 #    '/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
 #    '/ttHTobb_M125_TuneCUETP8M2_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG081_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
 
-    '/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v2/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-260_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-300_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-450_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-600_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-750_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToRSGravitonToHHTo4B_M-900_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/VBFHToBB_M-125_13TeV_powheg_pythia8_weightfix/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG092_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG087_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluHToBB_M125_13TeV_powheg_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/ttHToNonbb_M125_TuneCUETP8M2_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG082_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
-    '/GluGluToHHTo4B_node_SM_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG091_90X_upgrade2017_realistic_v6_C1-v1/AODSIM'
+#    '/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v2/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-260_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-300_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-450_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-600_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-750_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToRSGravitonToHHTo4B_M-900_narrow_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/VBFHToBB_M-125_13TeV_powheg_pythia8_weightfix/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG092_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/ZH_HToBB_ZToNuNu_M125_13TeV_powheg_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG087_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluHToBB_M125_13TeV_powheg_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/ttHToNonbb_M125_TuneCUETP8M2_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG082_90X_upgrade2017_realistic_v6_C1-v1/AODSIM',
+#    '/GluGluToHHTo4B_node_SM_13TeV-madgraph/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG091_90X_upgrade2017_realistic_v6_C1-v1/AODSIM'
 ]
 
 #datasets = ['/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW']
@@ -57,7 +59,7 @@ signals=[
 
 #datasets = QCD+signals
 
-datasets = QCD
+datasets = signals
 
 #datasets =["/ttHTobb_M125_TuneCUETP8M2_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG081_90X_upgrade2017_realistic_v6_C1-v1/AODSIM"]
 
@@ -68,7 +70,7 @@ if __name__ == '__main__':
     config = config()
     
     for dataset in datasets:
-        name = 'HLT_Ntuple_Hbb_Signal_v8_AODSIM'
+        name = 'HLT_Ntuple_Hbb_Signal_v8_AODSIM_QCD15to30'
         config.section_("General")
         config.General.workArea = 'crab_'+name
         config.General.transferLogs=True
