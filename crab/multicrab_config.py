@@ -1,6 +1,6 @@
 QCD = [
-#    '/QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
-#    '/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
+    '/QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
+    '/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
 #    '/QCD_Pt_50to80_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
 #    '/QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
 #    '/QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v1/GEN-SIM-RAW',
@@ -57,7 +57,7 @@ signals=[
 
 #datasets = QCD+signals
 
-datasets = signals
+datasets = QCD
 
 #datasets =["/ttHTobb_M125_TuneCUETP8M2_13TeV-powheg-pythia8/PhaseIFall16DR-FlatPU28to62HcalNZSRAW_HIG081_90X_upgrade2017_realistic_v6_C1-v1/AODSIM"]
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         os.system("tar czf python.tar.gz --dereference --directory $CMSSW_BASE python")
         os.system("voms-proxy-info -path | xargs -i  cp {}  .")
         config.JobType.inputFiles = [
-                                     'hltDump2.py',
+                                     'hltForNtuples3_dump.py',
                                      'fwlite_config.py',
                                      'script.py',
                                      'utils.py',
@@ -105,8 +105,7 @@ if __name__ == '__main__':
 #        config.Data.totalUnits = 100*config.Data.unitsPerJob ##FIXME: use -1
 #        config.Data.unitsPerJob = 1 #FIXME: use 20
         config.Data.totalUnits = -1 #10*config.Data.unitsPerJob #FIXME: use -1
-#        config.Data.outLFNDirBase = '/store/user/sdonato/' + name
-        config.Data.outLFNDirBase = '/store/user/sdonato/' + name
+        config.Data.outLFNDirBase = '/store/user/woodson/' + name
         config.Data.publication = True
 #        config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/13TeV/Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON_v2.txt'
 #        config.Data.lumiMask = 'https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/DCSOnly/json_DCSONLY.txt' 
@@ -122,7 +121,7 @@ if __name__ == '__main__':
         
         config.section_("Site")
 #        config.Site.storageSite = "T2_CH_CSCS"
-        config.Site.storageSite = "T3_CH_PSI"
+        config.Site.storageSite = "T3_US_FNALLPC"
         print "submitting ",dataset
         crabCommand('submit',config = config)
         print "DONE ",dataset
